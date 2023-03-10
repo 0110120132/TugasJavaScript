@@ -1,0 +1,29 @@
+<script>
+    let namapegawai = "Daniel Adi Saputra";
+    let jabatan = "Asisten Manager";
+    let status = "Menikah"
+
+    let gajipokok = 0;
+    switch (jabatan) {
+        case 'Manager': gajipokok = 10000000; break;
+        case 'Asisten Manager': gajipokok = 8000000; break;
+        case 'Staff': gajipokok = 5000000; break;
+        default: gajipokok = 0;
+    }
+
+    let tunjanganjabatan = gajipokok * 0.1;
+    let bpjs = gajipokok * 0.1;
+    let tunjangankeluarga = (status == 'Menikah') ? gajipokok * 0.1 : 0;
+
+    let total = gajipokok + tunjanganjabatan + bpjs + tunjangankeluarga;
+
+    document.write("<h3 align='center'> Rincian Pembayaran Gaji dan Tunjangan Pegawai PT Daniel Mendunia </h3>" + "<hr>"
+        + "<br/> Nama Pegawai = " + namapegawai
+        + "<br/> Jabatan = " + jabatan
+        + "<br/> Status = " + status
+        + "<br/> Gaji Pokok = " + gajipokok
+        + "<br/> Nominal Tunjangan Jabatan = " + tunjanganjabatan
+        + "<br/> Nominal Tunjangan BPJS = " + bpjs
+        + "<br/> Nominal Tunjangan Keluarga = " + tunjangankeluarga
+        + "<br/> Total Nominal Gaji dan Tunjangan Yang Diterima Pegawai = " + total)
+</script>
