@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas JavaScript 4</title>
+    <style>
+        #a {
+            display: inline;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table
+        style="width: 30%; background-color: ghostwhite; border: solid; padding: 22px; border-radius: 10px; margin: 20px;">
+        <form id="kalkulator">
+            <tr>
+                <td colspan="2" style="padding-bottom: 10px; font-weight: bold;">Kalkulator Sederhana</td>
+            </tr>
+            <tr>
+                <td>Masukan Angka 1</td>
+                <td><input type="number" name="angka1" placeholder="masukan angka"></td>
+            </tr>
+            <tr>
+                <td>Masukan Angka 2</td>
+                <td><input type="number" name="angka2" placeholder="masukan angka"></td>
+            </tr>
+            <tr>
+                <td>Hasil</td>
+                <td><input type="text" name="display" disabled></td>
+            </tr>
+            <!-- <tr>
+                <td><button type="button" onclick="tambah()">+</button></td>
+            </tr> -->
+            <tr id="a">
+                <td><input type="button" value="*" onclick="perkalian()"></td>
+            </tr>
+            <tr id="a">
+                <td><input type="button" name="hasil" value="/" onclick="pembagian()"></td>
+            </tr>
+            <tr id="a">
+                <td><input type="button" name="hasil" value="**" onclick="pangkat()"></td>
+            </tr>
+            <tr style="color:red">
+                <td id="hasil"></td>
+            </tr>
+        </form>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
